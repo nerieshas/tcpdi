@@ -702,6 +702,7 @@ class tcpdi_parser {
      * @since 1.0.000 (2011-06-20)
      */
     protected function getRawObject($offset=0, $data=null) {
+        $offset = (int) $offset;
         if ($data == null) {
             $data =& $this->pdfdata;
         }
